@@ -6,6 +6,7 @@ const tHKalah = "Kamu Kalah :(";
 const jwbKomputer = document.getElementsByClassName("jwbkomputer")[0];
 const jwbUser = document.getElementsByClassName("jwbuser")[0];
 const form = document.getElementsByTagName("form")[0];
+const p = document.getElementsByTagName("p");
 // const jwbKomputer = "<p>Jawaban Komputer adalah </p>";
 // const jwbUser = "<p>Sedangkan</p> <p>Jawaban Kamu adalah 68</p>";
 
@@ -33,6 +34,10 @@ button.addEventListener("click", function(e){
                     hasil.style.color = "red";
             }
         }
+    for(let i = 0; i < p.length; i++){
+        p[i].classList.add("fade");
+    }
+    hasil.classList.add("fade");
     inputUser.value = "";
 e.preventDefault();
 });
