@@ -115,6 +115,24 @@ h1{
     animation-duration: 0.8s;
 }
 
+footer{
+    background-color: rgb(27, 44, 58);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+footer a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 512px) {
     .container{
         width: 80%;
